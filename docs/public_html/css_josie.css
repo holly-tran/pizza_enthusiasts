@@ -1,0 +1,25 @@
+body {
+    background: #fff;
+}
+
+h1 {
+    font-family: tahoma, geneva, sans-serif;
+    padding: 5px;
+}
+
+h2 {
+    font-family: tahoma, geneva, sans-serif;
+    padding: 5px;
+}
+
+p {
+    font-size: 16px;
+    font-family: tahoma, geneva, sans-serif;
+    max-width: 1000px;
+    padding: 5px;
+}
+
+footer {
+    font-style: bold;
+    text-align: center;
+}
