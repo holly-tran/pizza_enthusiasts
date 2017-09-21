@@ -1,15 +1,47 @@
+header{
+    align-content: center;
+}
+
 body {
-    background: #fff;
+    background: #FACC7C;
+}
+
+/* --- Nav Bar --- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C70606;
+    font-family: tahoma, geneva, sans-serif;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 h1 {
     font-family: tahoma, geneva, sans-serif;
     padding: 5px;
+    text-shadow: 2px 1px rgb(208,133,3);
 }
 
 h2 {
     font-family: tahoma, geneva, sans-serif;
     padding: 5px;
+    text-shadow: 1px .5px rgb(208,133,3);
+}
+
+table {
+    table-layout: auto;
 }
 
 p {
@@ -17,9 +49,10 @@ p {
     font-family: tahoma, geneva, sans-serif;
     max-width: 1000px;
     padding: 5px;
+    text-shadow: .25px .25px black;
 }
 
 footer {
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
 }
