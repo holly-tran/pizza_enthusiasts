@@ -5,15 +5,10 @@
 <!-- div style="background-color:yellow -->
 <head>
 <meta charset="utf-8">
-<!DOCTYPE html>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
     <title>bootstrap_matt_rockhold</title>
 
-    <!-- This says our CSS is compatible with phones, and phones
-         don't need to scale it strangely. -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Main CSS styles for Bootstrap -->
@@ -34,15 +29,25 @@
     <!-- Our custom stylesheet that WE write. We need this to not have our
          text appear under the nav bar. -->
     <link rel="stylesheet" href="custom.css">
-
+<style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+    </style>
   </head>
 
   <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+      
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
 
@@ -53,44 +58,36 @@
           </button>
 
           <!-- Title on nav bar -->
-          <a class="navbar-brand" href="#">Bootstrap</a>
-        </div>
+          <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
 
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="login.html">Login</a></li>
-            <li class="active"><a href="about.html">about</a></li>
-            <li><a href="sign_up.html">signup</a></li>
-            <li><a href="index.html">index</a></li>
-            <li><a href="popular_pizza.html">Login</a></li>
-            <li><a href="veg_vegan_pizza.html">about</a></li>
-            <li><a href="fresh_frozen.html">signup</a></li>
-            <li><a href="pizza_news.html">index</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="sign_up.html">Signup</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="popular_pizza.html">Popular Pizza</a></li>
+            <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
+            <li><a href="fresh_frozen.html">Fresh vs. Frozen</a></li>
+            <li><a href="pizza_news.html">Pizza News</a></li>
           </ul>
         </div>
-      </div>
     </nav> 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<title>All About Pizza Enthusiasts</title>
-</head>
-
-<body>
 <img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>  
   
 
-<div>
+<div class="jumbotron">
 <h1>All About Pizza Enthusiasts</h1>
 
-<p>We here at Pizza Enthusiasts believe that pizza is one of the greatest inventions in food history. That's why we put together a site dedicated to various information about it. Got an idea or want to read more about something pizza related? Give us some feedback! Let us know what you'd like to see. Feel free to contact us at either billy.raymond@my.simpson.edu or holly.tran@my.simpson.edu. </p>
+<p class="lead">We here at Pizza Enthusiasts believe that pizza is one of the greatest inventions in food history. That's why we put together a site dedicated to various information about it. Got an idea or want to read more about something pizza related? Give us some feedback! Let us know what you'd like to see. Feel free to contact us at either billy.raymond@my.simpson.edu or holly.tran@my.simpson.edu. </p>
 </div>
 
 <div>
 <h2>Did someone say pizza?</h2>
 
-<p>Pizza first originated from Italy, but since then, Americans and many other countries have adopted pizza as its own and changed it to suit their tastes. How could anyone not like pizza? There's so many different variations to it that it's hard not to like it! You can have super unhealthy, carb loaded pies or there's the extremely healthy (especially if it's made from scratch), vegan/vegetarian options (though not all vegan and vegetarian pizza is healthy). Did we mention that there's dessert pizza?! Yes, pizza can come in all types of forms, even mini muffin sizes. Now of course we don't want to seem too biased, but, pizza rocks! The choices are endless.</p>
+<p class="lead">Pizza first originated from Italy, but since then, Americans and many other countries have adopted pizza as its own and changed it to suit their tastes. How could anyone not like pizza? There's so many different variations to it that it's hard not to like it! You can have super unhealthy, carb loaded pies or there's the extremely healthy (especially if it's made from scratch), vegan/vegetarian options (though not all vegan and vegetarian pizza is healthy). Did we mention that there's dessert pizza?! Yes, pizza can come in all types of forms, even mini muffin sizes. Now of course we don't want to seem too biased, but, pizza rocks! The choices are endless.</p>
 </div>
 
 <footer>
@@ -101,9 +98,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
-</html>
-
-
-</body>
-
 </html>
