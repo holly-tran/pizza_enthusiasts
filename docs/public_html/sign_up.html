@@ -4,17 +4,22 @@
 <title>Sign Up</title>
 </head>
 <body>
-<p>Please enter your information to sign up:</p>
-<form>
-    First Name:<br>
-    <input type="text" name="firstname"><br>
-    Last Name:<br>
-    <input type="text" name="lastname"><br>
-    Email Address:<br>
-    <input type="text" name="emailaddress"><br>
-    Create Username:<br>
-    <input type="text" name="username"><br>
-    Create Password:<br>
-    <input type="text" name="password"><br>
+<div class="container">
+
+      <form class="form-signup">
+ <h2 class="form-signup-heading">Please enter your information to sign up:</h2>
+
+    <label for="inputFirstName" class="sr-only">First Name:</label><br>
+    <input type="text" id="inputFirstName" class="form-control" placeholder="First" required="" autofocus=""><br>
+    <label for="inputLastName" class="sr-only">Last Name:</label><br>
+    <input type="text" id="inputLastName" class="form-control" placeholder="Last" required="" autofocus=""><br>
+    <label for="inputEmail" class="sr-only">Email Address:</label><br>
+    <input type="text" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus=""><br>
+    <label for="inputUsername" class="sr-only">Create Username:</label><br>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus=""><br>
+    <label for="inputPassword" class="sr-only">Create Password:</label><br>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Password" required="" autofocus=""><br>
+    <br><button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>  
+
     </form>
 </html>
