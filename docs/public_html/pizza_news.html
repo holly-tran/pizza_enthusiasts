@@ -3,15 +3,80 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css_josie.css">
-<title>Pizza News</title>
-</head>
+<!-- div style="background-color:yellow -->
 
-<body>
-<header>
+    <title>bootstrap_matt_rockhold</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+    <!-- If you don't like how bootstrap looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+         text appear under the nav bar. -->
+    <link rel="stylesheet" href="custom.css">
+<style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sign_up.html">Signup</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="popular_pizza.html">Popular Pizza</a></li>
+            <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
+            <li><a href="fresh_frozen.html">Fresh vs. Frozen</a></li>
+            <li class="active"><a class="btn btn-primary" href="pizza_news.html">Pizza News</a></li>
+          </ul>
+        </div>
+    </nav> 
+
+
 <img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>  
-</header>
-<nav>
+  <nav>
     <ul>
 	  <li>
 		<a href="login.html">Login</a>
@@ -43,24 +108,32 @@
     </ul>
   </nav>
 
+<div>
 <h1>Pizza News</h1>
 
-<p>Occasionally there'll be some interesting news articles about pizza. So on this page, we'd like to include a few articles that we think are interesting and maybe worthwhile for you to read. So check them out below, let us know if there are any interesting articles you've stumbled across.</p>
+<p class="lead">Occasionally there'll be some interesting news articles about pizza. So on this page, we'd like to include a few articles that we think are interesting and maybe worthwhile for you to read. So check them out below, let us know if there are any interesting articles you've stumbled across.</p>
+</div>
 
+<div>
 <h2>Pizza and Body Language?</h2>
 
-<p>According to this interesting article by <a href="https://munchies.vice.com/en_us/article/aey4ba/the-way-you-eat-pizza-says-a-lot-about-you-according-to-body-language-experts">Vice</a>, how you eat your pizza tells a lot about you. Strange right? Well a bunch of body language experts seem to think that it can "identify your essential personality qualities". Interesting right? Check out the article above and tell us your opinions on it.</p>
+<p class="lead">According to this interesting article by <a href="https://munchies.vice.com/en_us/article/aey4ba/the-way-you-eat-pizza-says-a-lot-about-you-according-to-body-language-experts">Vice</a>, how you eat your pizza tells a lot about you. Strange right? Well a bunch of body language experts seem to think that it can "identify your essential personality qualities". Interesting right? Check out the article above and tell us your opinions on it.</p>
+</div>
 
+<div>
 <h2>Highway Pizza Havoc</h2>
-<p>In an article by <a href="http://www.nydailynews.com/news/national/truck-full-frozen-pizza-crashes-shuts-arkansas-highway-article-1.3398989">Daily News</a>, a truck carrying thousands of frozen pizzas, crashed and spilled loads of the pies on the highway, causing the Arkansas highway to shut down. That's insane and even more impressive that no one came to steal those frozen pizzas laid all over the highway. Or maybe they did, who knows! Check out the article above to read it and let us know what you think.</p>
+<p class="lead">In an article by <a href="http://www.nydailynews.com/news/national/truck-full-frozen-pizza-crashes-shuts-arkansas-highway-article-1.3398989">Daily News</a>, a truck carrying thousands of frozen pizzas, crashed and spilled loads of the pies on the highway, causing the Arkansas highway to shut down. That's insane and even more impressive that no one came to steal those frozen pizzas laid all over the highway. Or maybe they did, who knows! Check out the article above to read it and let us know what you think.</p>
 <ul>
 <li><a href="popular_pizza.html">Page 1</a></li>
 </ul>
+</div>
 
 <footer>
 &#169; Copyright 2017 by Pizza Enthusiasts
 </footer>
-
+<!-- Scripts required to make Bootstrap work better. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

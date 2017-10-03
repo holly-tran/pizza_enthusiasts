@@ -3,65 +3,140 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css_josie.css">
-<title>Popular Pizza</title>
-</head>
+<!-- div style="background-color:yellow -->
 
-<body>
-<header>
+    <title>bootstrap_matt_rockhold</title>
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+    <!-- If you don't like how bootstrap looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+         text appear under the nav bar. -->
+    <link rel="stylesheet" href="custom.css">
+<style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sign_up.html">Signup</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li class="active"><a class="btn btn-primary" href="popular_pizza.html">Popular Pizza</a></li>
+            <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
+            <li><a href="fresh_frozen.html">Fresh vs. Frozen</a></li>
+            <li><a href="pizza_news.html">Pizza News</a></li>
+          </ul>
+        </div>
+    </nav> 
+
 <img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>  
-</header>
-<nav>
-    <ul>
-	  <li>
-		<a href="login.html">Login</a>
-	  </li>
-	  
-	  <li>
-		<a href="sign_up.html">Sign Up</a>
-	  </li>
-	  
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
-	  
-	  <li>
-		<a href="about.html">About</a>
-	  </li>
-	  
-	  <li>
-        <a href="veg_vegan_pizza.html">Vegetarian and Vegan Options</a>
-      </li>
-	  
-      <li>
-        <a href="fresh_frozen.html">Frozen vs Fresh Pizza</a>
-      </li>
-	  
-	  <li>
-		<a href="pizza_news.html">News About Pizza</a>
-	  </li>
-    </ul>
-  </nav>
 
-<h1>What's popular in pizza toppings?</h1>
+<h1>What's Popular in Pizza Toppings?</h1>
 
-<p>There are many types of pizza, from the toppings to styles of pizza. So what are some of the types that are popular among Americans? According to <a href="http://www.huffingtonpost.com/2013/11/12/popular-pizza-toppings_n_4261085.html">The Huffington Post</a>, the ten best pizza toppings, in order, are these:</p> 
-<ol>
-    <li>Pepperoni</li>
-    <li>Mushrooms</li>
-    <li>Onions</li>
-    <li>Sausage</li>
-    <li>Bacon</li>
-    <li>Extra Cheese</li>
-    <li>Black Olives</li>
-    <li>Green Peppers</li>
-    <li>Pineapples</li>
-    <li>Spinach</li>
- </ol>
+<p class="lead">There are many types of pizza, from the toppings to styles of pizza. So what are some of the types that are popular among Americans? According to <a href="http://www.huffingtonpost.com/2013/11/12/popular-pizza-toppings_n_4261085.html">The Huffington Post</a>, their top ten pizza toppings, ranked in order, are</p> 
 
- <h1> Deep Dish or Thin Crust?</h1>
+<div class="container">
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Top Ten Ranked Pizzas:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Pepperoni</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mushrooms</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Onions</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Sausage</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Bacon</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Extra Cheese</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Black Olives</td>
+    </tr>
+    <tr>
+    <td>8</td>
+      <td>Green Peppers</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Pineapples</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Spinach</td>
+    </tr>
+  </tbody>
+</table> 
+</div>
+
+ <h2> Deep Dish or Thin Crust?</h2>
  
- <p> Many people are split between the style of pizza crusts. Some will argue that Chicago style deep dish is better than New York style thin crust. So who's right? <u>We here at Pizza Enthusiasts believe that it is all about personal preference</u>, but Billy thinks thin crust is better and Holly is a fan of both.</p>
+ <p class="lead"> Many people are split between the style of pizza crusts. Some will argue that Chicago style deep dish is better than New York style thin crust. So who's right? <u>We here at Pizza Enthusiasts believe that it is all about personal preference</u>, but Billy thinks thin crust is better and Holly is a fan of both.</p>
+
+<div class="alert alert-dismissible alert-info">
+  <button class="close" type="button" data-dismiss="alert">&times;</button>
+<strong>Heads up!</strong><p>Month-long pizza deal: Get two medium thin crust pizzas and we'll throw in a free order of buffalo wings! How can you refuse this offer?</p>
+</div> 
 
 <ul>
 <li><a href="veg_vegan_pizza.html">Page 2</a></li>
@@ -70,7 +145,9 @@
 <footer>
 &#169; Copyright 2017 by Pizza Enthusiasts
 </footer>
-
+<!-- Scripts required to make Bootstrap work better. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

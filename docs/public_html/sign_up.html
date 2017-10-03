@@ -1,25 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sign Up</title>
-</head>
-<body>
+<!-- div style="background-color:yellow -->
+<meta charset="utf-8">
+
+    <title>bootstrap_matt_rockhold</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+    <!-- If you don't like how bootstrap looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+         text appear under the nav bar. -->
+    <link rel="stylesheet" href="custom.css">
+<style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a class="btn btn-primary" href="sign_up.html">Signup</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="popular_pizza.html">Popular Pizza</a></li>
+            <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
+            <li><a href="fresh_frozen.html">Fresh vs. Frozen</a></li>
+            <li><a href="pizza_news.html">Pizza News</a></li>
+          </ul>
+        </div>
+    </nav> 
+
+<img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>
+
 <div class="container">
+<p class="lead">Please enter your information to sign up:</p>
 
-      <form class="form-signup">
- <h2 class="form-signup-heading">Please enter your information to sign up:</h2>
-
-    <label for="inputFirstName" class="sr-only">First Name:</label><br>
-    <input type="text" id="inputFirstName" class="form-control" placeholder="First" required="" autofocus=""><br>
-    <label for="inputLastName" class="sr-only">Last Name:</label><br>
-    <input type="text" id="inputLastName" class="form-control" placeholder="Last" required="" autofocus=""><br>
-    <label for="inputEmail" class="sr-only">Email Address:</label><br>
-    <input type="text" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus=""><br>
-    <label for="inputUsername" class="sr-only">Create Username:</label><br>
-    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus=""><br>
-    <label for="inputPassword" class="sr-only">Create Password:</label><br>
-    <input type="text" id="inputUsername" class="form-control" placeholder="Password" required="" autofocus=""><br>
-    <br><button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>  
-
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">First Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+    </fieldset>
     </form>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Last Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" type="text" placeholder="Email">
+      </div>
+    </div>
+    </fieldset>
+    </form>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Email Address</label>
+      <div class="col-lg-10">
+        <input class="form-control" type="text" placeholder="Email">
+      </div>
+    </div>
+    </fieldset>
+    </form>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Create Username</label>
+      <div class="col-lg-10">
+        <input class="form-control" type="text" placeholder="Email">
+      </div>
+    </div>
+    </fieldset>
+    </form>
+<form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Create Password</label>
+      <div class="col-lg-10">
+        <input class="form-control" type="text" placeholder="Email">
+      </div>
+    </div>
+    </form>
+<div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default" type="reset">Cancel</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+      </div>
+</div>
+
+<footer>
+&#169; Copyright 2017 by Pizza Enthusiasts
+</footer>
+<!-- Scripts required to make Bootstrap work better. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>
+
