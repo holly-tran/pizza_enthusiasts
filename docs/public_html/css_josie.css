@@ -66,7 +66,11 @@ p {
     padding: 5px;
     border-style: dotted;
     border-color: #C70606;
+<<<<<<< HEAD
     padding: 5px;
+=======
+    padding: 5 px;
+>>>>>>> 0f1fa5318d6fd0283e8d88709b8d217825e06617
     margin-left: 105px;
     margin-right: 98px;
     margin-top: 5px;
