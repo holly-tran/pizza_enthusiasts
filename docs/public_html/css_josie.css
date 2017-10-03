@@ -4,7 +4,7 @@ header {
     border-color: #C70606;
     border-width: 5px;
     background-color: #C70606;
-    padding: 50px;
+    padding: 5px;
 }
 
 body {
@@ -20,12 +20,8 @@ nav ul {
     padding: 5px;
     overflow: hidden;
     background-color: #C70606;
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
     max-width: 100%;
-}
-
-.below_menu_container {
-  padding-top: 50px;
 }
 
 nav li {
@@ -41,25 +37,25 @@ nav li a {
 }
 
 h1 {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
     padding: 5px;
     text-shadow: 2px 1px rgb(208,133,3);
 }
 
 h2 {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
     padding: 5px;
     text-shadow: 1px .5px rgb(208,133,3);
 }
 
 p {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
     max-width: 100%;
     padding: 5px;
 }
 
 #main {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
     font-style: oblique;
     font-weight: bold;
     padding: 5px;
@@ -70,6 +66,11 @@ p {
     padding: 5px;
     border-style: dotted;
     border-color: #C70606;
+<<<<<<< HEAD
+    padding: 5px;
+=======
+    padding: 5 px;
+>>>>>>> 0f1fa5318d6fd0283e8d88709b8d217825e06617
     margin-left: 105px;
     margin-right: 98px;
     margin-top: 5px;
@@ -86,7 +87,7 @@ td {
     border: 1px solid black;
     padding: 3px;
     margin: 3px;
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
 }
 
 .list {
@@ -98,11 +99,11 @@ td {
 }
 
 ol {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
 }
 
 ul {
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, geneva, sans-serif;
 }
 
 footer {
