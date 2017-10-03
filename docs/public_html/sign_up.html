@@ -62,7 +62,7 @@
           <ul class="nav navbar-nav">
             <li><a href="login.html">Login</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="active"><a href="sign_up.html">Signup</a></li>
+            <li class="active"><a class="btn btn-primary" href="sign_up.html">Signup</a></li>
             <li><a href="index.html">Index</a></li>
             <li><a href="popular_pizza.html">Popular Pizza</a></li>
             <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
@@ -76,18 +76,56 @@
 
 <div class="container">
 <p class="lead">Please enter your information to sign up:</p>
-<form>
-    First Name:<br>
-    <input type="text" name="firstname"><br>
-    Last Name:<br>
-    <input type="text" name="lastname"><br>
-    Email Address:<br>
-    <input type="text" name="emailaddress"><br>
-    Create Username:<br>
-    <input type="text" name="username"><br>
-    Create Password:<br>
-    <input type="text" name="password"><br>
-    </form>
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">First Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Last Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Email Address</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Create Username</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Create Password</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+    </div>
+<div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default" type="reset">Cancel</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
 </div>
 
 <footer>

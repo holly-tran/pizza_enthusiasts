@@ -60,7 +60,7 @@
 
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="login.html">Login</a></li>
+            <li class="active"><a class="btn btn-primary" href="login.html">Login</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="sign_up.html">Signup</a></li>
             <li><a href="index.html">Index</a></li>
@@ -72,19 +72,40 @@
         </div>
     </nav> 
 
-
-
 <img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>
 
 <div class="container">
 <p class="lead">Please enter your login information:</p>
-<form>
-    Username:<br>
-    <input type="text" name="username"><br>
-    Password:<br>
-    <input type="text" name="password">
+
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+      </div>
+      </div>
+
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="inputPassword">Password</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputPassword" type="password" placeholder="Password">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Checkbox
+          </label>
+        </div>
+      </div>
+    </div>
+<div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default" type="reset">Cancel</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </div>
+  </fieldset>
 </form>
-</div>
 
 <footer>
 &#169; Copyright 2017 by Pizza Enthusiasts
