@@ -1,32 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- div style="background-color:yellow -->
 <meta charset="utf-8">
-
     <title>bootstrap_matt_rockhold</title>
-
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Main CSS styles for Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Optional theme add-on -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
-
-    <!-- If you don't like how bootstrap looks, go here and see other themes
-         that are available:
-         https://bootswatch.com/
-
-         You can replace the 'optional theme' with links from the page below
-         to get that theme:
-         https://www.bootstrapcdn.com/bootswatch/
-    -->
-
-    <!-- Our custom stylesheet that WE write. We need this to not have our
-         text appear under the nav bar. -->
-    <link rel="stylesheet" href="custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="b_t_b.css">
 <style>
       .mycolor {
         background-color: #EEEEEE;
@@ -43,36 +24,36 @@
 
   <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      
+
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
 
-            <!-- Three line "hamburger" icon for the collapsed navigation -->
+          
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-          <!-- Title on nav bar -->
+          
           <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
 
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="active"><a class="btn btn-primary" href="sign_up.html">Signup</a></li>
-            <li><a href="index.html">Index</a></li>
             <li><a href="popular_pizza.html">Popular Pizza</a></li>
             <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
             <li><a href="fresh_frozen.html">Fresh vs. Frozen</a></li>
             <li><a href="pizza_news.html">Pizza News</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="active"><a href="sign_up.html">Signup</a></li>
           </ul>
         </div>
     </nav> 
 
-<img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>
+<div class="jumbotron"> 
+<img src="../public_html/img/pizza_enthusiasts.jpg" height="400" alt="Frozen vs Fresh Pizza" class="img-responsive"/> 
+</div>
 
 <div class="container">
 <p class="lead">Please enter your information to sign up:</p>
@@ -136,10 +117,6 @@
 <footer>
 &#169; Copyright 2017 by Pizza Enthusiasts
 </footer>
-<!-- Scripts required to make Bootstrap work better. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
 
