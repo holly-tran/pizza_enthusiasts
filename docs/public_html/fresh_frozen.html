@@ -3,55 +3,96 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Fresh vs Frozen Pizza</title>
-</head>
 
-<body>
+
+<!-- div style="background-color:yellow -->
+
+    <title>bootstrap_matt_rockhold</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+    <!-- If you don't like how bootstrap looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+         text appear under the nav bar. -->
+    <link rel="stylesheet" href="custom.css">
+<style>
+      .mycolor {
+        background-color: #FFF;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .container {
+        background-color: #FFF;
+        border-style: solid;
+        border-width: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Pizza Enthusiasts</a>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sign_up.html">Signup</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="popular_pizza.html">Popular Pizza</a></li>
+            <li><a href="veg_vegan_pizza.html">Veggie/Vegan Pizza</a></li>
+            <li class="active"><a class="btn btn-primary" href="fresh_frozen.html">Fresh vs. Frozen</a></li>
+            <li><a href="pizza_news.html">Pizza News</a></li>
+          </ul>
+        </div>
+    </nav> 
+
 <img src="../public_html/img/pizza_enthusiasts.jpg" width="1000" height="460" alt="Frozen vs Fresh Pizza"/>  
-  <nav>
-    <ul>
-	  <li>
-		<a href="login.html">Login</a>
-	  </li>
-	  
-	  <li>
-		<a href="sign_up.html">Sign Up</a>
-	  </li>
-	  
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
-	  
-	  <li>
-		<a href="about.html">About</a>
-	  </li>
-	  
-      <li>
-        <a href="popular_pizza.html">Popular Toppings</a>
-      </li>
-
-      <li>
-        <a href="veg_vegan_pizza.html">Vegetarian and Vegan Options</a>
-      </li>
-	  
-	  <li>
-		<a href="pizza_news.html">News About Pizza</a>
-	  </li>
-    </ul>
-  </nav>
-
+  
+  
 <img src="../public_html/img/frozen_fresh.jpg" width="800" height="200" alt="Frozen vs Fresh Pizza"/>  
 
-<h1>Are you broke?</h1>
-<p>So you want pizza, but you have no money, what are you to do? You wouldn't want to make your own pizza, no you are to lazy and broke for that. So the next best thing is to head to the grocery store and buy a frozen pizza for cheap! But wait what are some good frozen pizzas out there? Well according to <a href="https://www.buzzfeed.com/christopherhudspeth/the-definitive-ranking-of-frozen-pizzas-from-worst-to-best?utm_term=.glPdMgjDW#.xamBPWOVQ">Buzzfeed's Rankings</a> these were their findings. Please note that they based this on a point scale of 30 with other categories like availability and closeness to delivery that we did not include in our table. This was our shortened list.</p>
+<h1>Are You broke?</h1>
 
-<table>
+<p class="lead">So you want pizza, but you have no money, what are you to do? You wouldn't want to make your own pizza, no you are to lazy and broke for that. So the next best thing is to head to the grocery store and buy a frozen pizza for cheap! But wait what are some good frozen pizzas out there? Well according to <a href="https://www.buzzfeed.com/christopherhudspeth/the-definitive-ranking-of-frozen-pizzas-from-worst-to-best?utm_term=.glPdMgjDW#.xamBPWOVQ">Buzzfeed's Rankings</a> these were their findings. Please note that they based this on a point scale of 30 with other categories like availability and closeness to delivery that we did not include in our table. This was our shortened list.</p>
+
+<div class="container">
+<table class="table table-striped table-hover ">
   <thead>
     <tr>
+      <th>#</th>
       <th>Name</th>
       <th>Cost</th>
       <th>Taste</th>
-	  <th>Ranking</th>
+      <th>Ranking</th>
     </tr>
   </thead>
   <tbody>
@@ -59,89 +100,138 @@
       <td>DiGiorno</td>
       <td>4/5</td>
       <td>5/5</td>
-	  <td>#1</td>
+      <td>#1</td>
     </tr>
-	<tr>
+    <tr>
       <td>Freschetta</td>
       <td>4/5</td>
       <td>5/5</td>
-	  <td>#2</td>
+      <td>#2</td>
     </tr>
-	<tr>
+    <tr>
       <td>Bon Appetit</td>
       <td>5/5</td>
       <td>5/5</td>
-	  <td>#3</td>
+      <td>#3</td>
     </tr>
-	<tr>
+    <tr>
       <td>California Pizza Kitchen</td>
       <td>3/5</td>
       <td>4/5</td>
-	  <td>#4</td>
+      <td>#4</td>
     </tr>
-	<tr>
+    <tr>
       <td>Newman's Own</td>
       <td>4/5</td>
       <td>4/5</td>
-	  <td>#5</td>
+      <td>#5</td>
     </tr>
-	<tr>
+    <tr>
       <td>Red Baron</td>
       <td>5/5</td>
       <td>3.5/5</td>
-	  <td>#6</td>
+      <td>#6</td>
     </tr>
-	<tr>
+    <tr>
       <td>Tombstone</td>
       <td>5/5</td>
       <td>3.5/5</td>
-	  <td>#7</td>
+      <td>#7</td>
     </tr>
-	<tr>
+    <tr>
       <td>Wild Mike's Ultimate Pizza</td>
       <td>3.5/5</td>
-      <td>4.5/5</td>
-	  <td>#8</td>
+      <td>#8</td>
     </tr>
-	<tr>
+    <tr>
       <td>Screamin' Sicilian</td>
       <td>4/5</td>
       <td>4.5/5</td>
-	  <td>#9</td>
+      <td>#9</td>
     </tr>
-	<tr>
+    <tr>
       <td>Tony's</td>
       <td>5/5</td>
       <td>2.5/5</td>
-	  <td>#10</td>
-    </tr>
+      <td>#10</td>
+    </tr> 
   </tbody>
+</table> 
+</div>
+
+<div class="alert alert-dismissible alert-info">
+  <button class="close" type="button" data-dismiss="alert">&times;</button>
+<strong>Heads up!</strong><p>Month-long pizza deal: Get two medium thin crust pizzas and we'll throw in a free order of buffalo wings! How can you refuse this offer?</p>
+</div> 
+
+<h2>Popular Local Restaurants in Des Moines</h2>
+
+<p class="lead">Got some spare "dough" to spend? Well look no further, here are some of the popular pizza joints, ranked in order by <a href="https://www.yelp.com/search?find_desc=pizza&find_loc=Des+Moines%2C+IA&ns=1">Yelp</a>,in the city for you to try out if you're ever craving some fresh made pies.</p>
+
+<div class="container">
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Popular Local Restaurants in Des Moines:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+<td>1</td>
+      <td>Fong's Pizza</td>
+      </tr>
+      <tr>
+<td>2</td>
+      <td>Blaze Fast Fire'd Pizza</td>
+      </tr>
+      <tr>
+<td>3</td>
+      <td>Centro</td>
+      </tr>
+      <tr>
+<td>4</td>
+      <td>Gusto Pizza</td>
+      </tr>
+      <tr> 
+<td>5</td>
+      <td>Paesanos Pizzeria</td>
+      </tr>
+      <tr>
+<td>6</td>
+      <td>Simon's</td>
+      </tr>
+      <tr>
+<td>7</td>
+      <td>Eatery/A</td>
+      </tr>
+      <tr>
+<td>8</td>
+      <td>Michael's Pizza</td>
+      </tr>
+      <tr>
+<td>9</td>
+      <td>Bordenaros Pizza & Pasta</td>
+      </tr>
+      <tr>
+<td>10</td>
+      <td>Mad Meatball Pizzeria & Pub</td>
+      </tr>
+</tbody>
 </table>
-
-<h1>Popular Local Restaurants in Des Moines</h1>
-<p>Got some spare "dough" to spend? Well look no further, here are some of the popular pizza joints, ranked in order by <a href="https://www.yelp.com/search?find_desc=pizza&find_loc=Des+Moines%2C+IA&ns=1">Yelp</a>,in the city for you to try out if you're ever craving some fresh made pies.</p>
-<ol>
-	<li>Fong's Pizza</li>
-	<li>Blaze Fast Fire'd Pizza</li>
-	<li>Centro</li>
-	<li>Gusto Pizza</li>
-	<li>Paesanos Pizzeria</li>
-	<li>Simon's</li>
-	<li>Eatery / A</li>
-	<li>Michael's Pizza</li>
-	<li>Bordenaros Pizza & Pasta</li>
-	<li>Mad Meatball Pizzeria & Pub</li>
-</ol>
-
+</div>
 
 <ul>
 <li><a href="pizza_news.html">Page 4</a></li>
 </ul>
 
+
 <footer>
 &#169; Copyright 2017 by Pizza Enthusiasts
 </footer>
-
+<!-- Scripts required to make Bootstrap work better. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
